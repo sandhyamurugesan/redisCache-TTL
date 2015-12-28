@@ -10,16 +10,17 @@ This plugin is an extension of [redis-cache-plugin] with TTL for grails version 
 This plugin can be configured for expiration based on the cahce name .
 Version 3.0.0 and above require Grails 2.4 or higher:
 
-plugins {
-  compile "org.grails.plugins:redisCache-TTL:1.0.0"
-}
+	plugins {
+		 compile "org.grails.plugins:redisCache-TTL:1.0.0"
+	}
 
 #Configuration: 
  Apart from the usual redis cache config,we have the ability for specifying the name of the cache and TTL in a Map List as below(cachesExpiry)
  
 grails {
 	 cache {
-		 cachesExpiry=[[ name:"subArrayIds", ttl:"90"],[name:"fromId",ttl:"60"]]   // cache 'subArrayIds' will expire in 90 sec and 'fromId' cache will 																						expire in 60 secs as per config 
+		 cachesExpiry=[[ name:"subArrayIds", ttl:"90"],
+		 		[name:"fromId",ttl:"60"]]   // cache 'subArrayIds' will expire in 90 sec and 'fromId' cache will 									expire in 60 secs as per config 
 	   redis {
 		 hostName = 'localhost'
 		 port = 6379
