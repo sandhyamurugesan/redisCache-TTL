@@ -20,7 +20,7 @@ Version 3.0.0 and above require Grails 2.4 or higher:
 	grails {
 	 	cache {
 		 cachesExpiry=[[ name:"subArrayIds", ttl:"90"],
-		 		[name:"fromId",ttl:"60"]]   // cache 'subArrayIds' will expire in 90 sec and 'fromId' cache will 									expire in 60 secs as per config 
+		 		[name:"fromId",ttl:"60"]]   // cache 'subArrayIds' will expire in 90 sec and 'fromId' cache will expire in 60 secs as per config 
 		   	redis {
 			 hostName = 'localhost'
 			 port = 6379
