@@ -17,17 +17,17 @@ Version 3.0.0 and above require Grails 2.4 or higher:
 #Configuration: 
  Apart from the usual redis cache config,we have the ability for specifying the name of the cache and TTL in a Map List as below(cachesExpiry)
  
-grails {
-	 cache {
+	grails {
+	 	cache {
 		 cachesExpiry=[[ name:"subArrayIds", ttl:"90"],
 		 		[name:"fromId",ttl:"60"]]   // cache 'subArrayIds' will expire in 90 sec and 'fromId' cache will 									expire in 60 secs as per config 
-	   redis {
-		 hostName = 'localhost'
-		 port = 6379
-		 timeout = 2000
-	   }
+		   	redis {
+			 hostName = 'localhost'
+			 port = 6379
+			 timeout = 2000
+		   	}
+	    }
 	 }
-   }
 
 This is based on spring @Cacheable and @CacheEvict annotations
 
