@@ -1,0 +1,9 @@
+<plugin name='redis-cache-ttl' version='1.0.0' grailsVersion='2.4 &gt; *'>
+  <author>Sandhya</author>
+  <authorEmail>dhya.san@gmail.com</authorEmail>
+  <title>Redis Cache TTL Plugin</title>
+  <description>A Redis-based implementation of the Cache plugin with cahce name specific TTL</description>
+  <documentation>http://grails.org/plugin/redis-cache-ttl</documentation>
+  <type>RedisCacheTTLGrailsPlugin</type>
+  <resources />
+</plugin>
