@@ -1,0 +1,20 @@
+initialize the below numbers to maintain a unique random number
+
+long a = 25214903917;   
+long c = 11;            
+long previous = 1;
+
+String randomNameAndNumber(String name){
+long r = a * previous + c; // generate a random number by adding and multiplying with a random number
+
+previous = r; //Assign that random number to previous to restore its value for the next iteration.
+
+if(name==null && name.equals(null))
+
+return " "+r
+
+else
+
+return name+" "+r
+
+}
